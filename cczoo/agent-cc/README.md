@@ -115,5 +115,5 @@ In agent systems, build-time intent and deployment policy are not sufficient on 
 
 **Adapters** 
 
- - **[Openclaw](./adapters/OpenClaw/scripts)** : provide self-build openclaw gateway iamge.
+ - **[Openclaw](./adapters/OpenClaw/scripts)** : povides a way to independently build the openclaw-gateway image and customize relevant configurations.This allows OpenClaw to run in a secure/isolated environment, avoiding any unnecessary impact on the host machine.
 
