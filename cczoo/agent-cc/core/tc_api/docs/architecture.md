@@ -544,8 +544,8 @@ See GAP-12 in `docs/overview_tasks.md`.
 
 ## 11. Related Documents
 
-- [../../tlog/docs/trusted-log/architecture.md](../../tlog/docs/trusted-log/architecture.md) — TruCon internal architecture, lock model, SQLite schema, crash recovery, verification.
-- [../../tlog/docs/trusted-log/verification.md](../../tlog/docs/trusted-log/verification.md) — operator-facing verification design, evidence-package boundaries, and chain replay model.
-- [../../tlog/docs/trusted-log/api.md](../../tlog/docs/trusted-log/api.md) — Python API signatures, type contracts, caller lifecycle.
-- [../../tlog/docs/trusted-log/README.md](../../tlog/docs/trusted-log/README.md) — Module overview and core concepts.
+- [architecture.md](../../tlog/docs/trusted-log/architecture.md) — TruCon internal architecture, lock model, SQLite schema, crash recovery, verification.
+- [verification.md](../../tlog/docs/trusted-log/verification.md) — operator-facing verification design, evidence-package boundaries, and chain replay model.
+- [api.md](../../tlog/docs/trusted-log/api.md) — Python API signatures, type contracts, caller lifecycle.
+- [README.md](../../tlog/docs/trusted-log/README.md) — Module overview and core concepts.
 - [docktap/api.md](docktap/api.md) — Docktap Python-side APIs, runtime surfaces, proxy lifecycle, and TruCon commit client behavior.
