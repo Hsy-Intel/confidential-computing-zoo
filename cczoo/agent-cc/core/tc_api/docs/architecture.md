@@ -1,8 +1,8 @@
-# TC-API Architecture
+# TC API Architecture
 
 ## 1. Purpose
 
-This document defines the full-project architecture for tc-api with the following principles:
+This document defines the full-project architecture for tc_api with the following principles:
 
 - Reuse existing REST API control-plane architecture.
 - Run Docktap as a dedicated service process.
@@ -37,7 +37,7 @@ Trusted-log code is organized into independently installable packages:
 | Package | Location | Purpose | Dependencies |
 |---|---|---|---|
 | `tlog` | `tlog/` | Shared domain types, ABCs, digest functions, and backend namespaces (`tlog.backends.rekor`, `tlog.backends.onchain`) | stdlib for base install; optional extras add sigstore, sigstore-rekor-types, cryptography, requests |
-| `tc-api` | `tc-api/` | REST API, TruCon service, Docktap sidecar, trust commit client | tlog[rekor], FastAPI, etc. |
+| `tc_api` | `tc_api/` | REST API, TruCon service, Docktap sidecar, trust commit client | tlog[rekor], FastAPI, etc. |
 
 Key layout conventions:
 - `tlog/tlog/`: `types.py` (Entry, Record, SubmitStatus, etc.), `errors.py`, `immutable.py` (ImmutableLogAdapter ABC), `local_mr.py` (LocalMRAdapter ABC), `digest.py` (canonical_json, compute_entry_digest, compute_event_digest), `backends/rekor/` (`SigstoreLogAdapter`, `OciBundleMirror`), and `backends/onchain/` (`OnChainLogAdapter` scaffold)
@@ -189,6 +189,7 @@ Operational implications:
 This persistence requirement is especially important for the long-lived default measured chain, where service restarts are expected but chain identity must remain stable.
 
 For TruCon internal architecture details (lock model, SQLite schema, crash recovery, verification), see [../../tlog/docs/trusted-log/architecture.md](../../tlog/docs/trusted-log/architecture.md).
+
 
 ## 4. Responsibilities by Component
 
