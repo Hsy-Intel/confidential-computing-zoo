@@ -1,4 +1,4 @@
-# Agent-cc Core Services
+# Agent-CC Core Services
 
 This directory contains the shared Agent-CC core service stack referenced from the project root. It is the implementation area for the build-to-runtime integrity path and the common trust infrastructure consumed by adapters.
 
